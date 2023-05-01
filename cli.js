@@ -38,7 +38,9 @@ if (args.e) {
     console.log("Longitude must be in range!")
 }
 
-if (args.n)
+if (args.n && args.s) {
+    console.log("Please only enter ONE latitude! North OR South!")
+}
 if (args.n) {
     latitude = args.n;
 } else if (args.s) {
