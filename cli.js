@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-
 import minimist from 'minimist';
 import moment from 'moment-timezone';
 import fetch from 'node-fetch';
@@ -20,8 +19,7 @@ if (args.h) {
 
 }
 
-let latitude;
-let longitude;
+// timezone
 let timezone;
 
 if (args.z) {
@@ -31,6 +29,8 @@ else {
 	timezone = moment.tz.guess();
 }
 
+// latitude
+let latitude;
 
 if (args.n) {
 	latitude = args.n;
@@ -40,6 +40,10 @@ if (args.n) {
 	console.log("Latitude must be in range!");
 	process.exit(0);
 }
+
+// longitude
+let longitude;
+
 if (args.e) {
 	longitude = args.e;
 } else if (args.w) {
