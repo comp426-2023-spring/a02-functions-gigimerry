@@ -2,7 +2,7 @@
     "name": "a02-functions-gigimerry",
     "version": "0.0.1",
     "description": " A02 COMP 426",
-    "main": "galosh.js",
+    "main": "index.js",
     "scripts": {
       "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
     },
@@ -17,9 +17,9 @@
     },
     "homepage": "https://github.com/comp426-2023-spring/a02-functions-gigimerry#readme",
     "dependencies": {
-      "minimist": "^1.2.7",
-      "moment-timezone": "^0.5.40",
-      "node-fetch": "^3.3.0"
+      "minimist": "^1.2.8",
+      "moment-timezone": "^0.5.43",
+      "node-fetch": "^3.3.1"
     },
     "bin": {
       "galosh.js": "./cli.js"
