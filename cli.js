@@ -27,13 +27,15 @@ if (args.h) {
  else {
     timezone = moment.tz.guess();
  }
-if (args.e && args.w)
+if (args.e && args.w) {
+    console.log("")
+}
 if (args.e) {
     longitude = args.e;
 } else if (args.w) {
     longitude = -args.w;
 } else {
-    console.log()
+    console.log("Longitude must be in range!")
 }
 
 if (args.n)
