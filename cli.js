@@ -27,9 +27,13 @@ if (args.h) {
  else {
     timezone = moment.tz.guess();
  }
+
+
+
 if (args.e && args.w) {
     console.log("Please only enter ONE longitude! East OR West!")
 }
+
 if (args.e) {
     longitude = args.e;
 } else if (args.w) {
@@ -38,9 +42,12 @@ if (args.e) {
     console.log("Longitude must be in range!")
 }
 
+
+
 if (args.n && args.s) {
     console.log("Please only enter ONE latitude! North OR South!")
 }
+
 if (args.n) {
     latitude = args.n;
 } else if (args.s) {
