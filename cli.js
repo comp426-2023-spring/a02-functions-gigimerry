@@ -78,14 +78,13 @@ if (args.d) {
 	days = 1;
 }
 
-rain = data.daily.precipitation_hours
 
 if (days == 0) {
-	console.log(rain[0] + " " + "today.");
+	console.log(data.daily.precipitation_hours[0] + " " + "today.");
 } else if (days == 1) {
-	console.log(rain[1] + " " + "tomorrow.");
+	console.log(data.daily.precipitation_hours[1] + " " + "tomorrow.");
 } else if (days > 1) {
-	console.log (rain[days] + " " + "in " + days + " days.");
+	console.log (data.daily.precipitation_hours[days] + " " + "in " + days + " days.");
 }
 
 
