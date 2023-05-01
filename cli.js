@@ -27,15 +27,16 @@ if (args.h) {
  else {
     timezone = moment.tz.guess();
  }
-
+if (args.e && args.w)
 if (args.e) {
     longitude = args.e;
 } else if (args.w) {
     longitude = -args.w;
-} else if (!longitude) {
+} else {
     console.log()
 }
 
+if (args.n)
 if (args.n) {
     latitude = args.n;
 } else if (args.s) {
