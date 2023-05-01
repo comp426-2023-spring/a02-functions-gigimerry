@@ -31,7 +31,9 @@ else {
 
 // latitude
 let latitude;
-
+if (args.n && args.s) {
+    console.log("Please only enter ONE latitude! North OR South!")
+}
 if (args.n) {
 	latitude = args.n;
 } else if (args.s) {
@@ -61,7 +63,7 @@ const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude="
 const data = await response.json();
 console.log(data);
 
-
+// days
 let days;
 
 if (args.d) {	
