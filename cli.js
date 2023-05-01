@@ -44,5 +44,5 @@ if (args.n) {
 } else if (args.s) {
     latitude = -args.n;
 } else if (!latitude) {
-    console.log()
+    console.log("Latitude must be in range!")
 }
