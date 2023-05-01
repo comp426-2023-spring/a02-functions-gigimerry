@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 import moment from "moment-timezone";
 import minimist from "minimist";
 
-var args = minimist(process.argv.slice(2));
+const args = minimist(process.argv.slice(2));
 
 
 if (args.h) {
@@ -17,3 +17,14 @@ if (args.h) {
     -j            Echo pretty JSON from open-meteo API and exit.`);
 	process.exit(0);
 }
+ let timezone;
+ let latitude;
+ let longitude;
+
+ if (args.a) {
+    tiemzone = args.a
+ }
+ else {
+    timezone = moment.tz.guess();
+ }
+
