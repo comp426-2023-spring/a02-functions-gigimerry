@@ -66,8 +66,13 @@ console.log(data);
 const days = args.d;
 const rain = data.daily.precipitation_hours;
 
-if (days > 1) {
-
+if (days == 0) {
+    console.log("today.")
+} else if (days > 1) {
+    console.log("in" + days + "days.")
+} else {
+    console.log("tomorrow.")
 }
+
 
 
