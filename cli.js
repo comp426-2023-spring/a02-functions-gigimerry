@@ -66,3 +66,8 @@ console.log(data);
 const days = args.d;
 const rain = data.daily.precipitation_hours;
 
+if (days > 1) {
+
+}
+
+
