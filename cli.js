@@ -63,8 +63,30 @@ const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude="
                                 + timezone + "&daily=precipitation_hours");
 const data = await response.json();
 console.log(data);
+let days;
+
+if (args.d) {	
+	days = args.d;
+} else if (args.d == 0) {
+	days = 0;
+} else {
+	days = 1;
+}
 
 
+if (days == 0) {
+	console.log(data.daily.precipitation_hours[0] + " " + "today.");
+} else if (days == 1) {
+	console.log(data.daily.precipitation_hours[1] + " " + "tomorrow.");
+} else if (days > 1) {
+	console.log (data.daily.precipitation_hours[days] + " " + "in " + days + " days.");
+}
+
+
+if (args.j) {
+	console.log(data);
+	process.exit(0);
+}
 
 
 
