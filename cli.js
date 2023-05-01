@@ -69,14 +69,14 @@ console.log(data);
 
 // days
 let days;
-
-if (args.d) {	
-	days = args.d;
-} else if (args.d == 0) {
-	days = 0;
-} else {
-	days = 1;
-}
+days = args.d
+// if (args.d) {	
+// 	days = args.d;
+// } else if (args.d == 0) {
+// 	days = 0;
+// } else {
+// 	days = 1;
+// }
 
 
 if (days == 0) {
